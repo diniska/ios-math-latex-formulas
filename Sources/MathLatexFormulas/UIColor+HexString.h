@@ -8,6 +8,8 @@
 
 #if TARGET_OS_IPHONE
 
+#import <UIKit/UIKit.h>
+
 @interface UIColor (HexString)
 
 + (UIColor *)colorFromHexString:(NSString *)hexString;
