@@ -25,7 +25,15 @@ let package = Package(
         .target(
             name: "MathLatexFormulas",
             dependencies: [],
-            path: "iosMath",
-            publicHeadersPath: "")
+            resources: [
+                .process("Resources/latinmodern-math.otf"),
+                .process("Resources/latinmodern-math.plist"),
+                .process("Resources/texgyretermes-math.otf"),
+                .process("Resources/texgyretermes-math.plist"),
+                .process("Resources/xits-math.otf"),
+                .process("Resources/xits-math.plist")
+            ],
+            publicHeadersPath: ""
+        )
     ]
 )
